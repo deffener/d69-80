@@ -1,0 +1,583 @@
+[kbplacer_plugin_action.py:65]: Plugin version: 0.12
+[kbplacer_plugin_action.py:66]: Python version: '3.11.5 (main, Aug 14 2024, 05:26:19) [MSC v.1939 64 bit (AMD64)]'
+[kbplacer_plugin_action.py:67]: KiCad version: 8.0.5 with 4.2.0 msw (phoenix) wxWidgets 3.2.5
+[kbplacer_dialog.py:585]: Language: en
+[kbplacer_plugin_action.py:75]: GUI state: {"layout_path": "C:\\Users\\deffenertoaster10\\Documents\\KiCad\\6.0\\projects\\d69-80\\keyboard-layout.json", "key_distance": [18.0, 17.0], "key_info": {"annotation_format": "SW{}", "position_option": "Default", "position": {"x": 0.0, "y": 0.0, "orientation": 0.0, "side": "Front"}, "template_path": ""}, "enable_diode_placement": true, "route_switches_with_diodes": false, "optimize_diodes_orientation": false, "diode_info": {"annotation_format": "D{}", "position_option": "Custom", "position": {"x": 8.5, "y": 3.03, "orientation": 90.0, "side": "Back"}, "template_path": ""}, "additional_elements": [{"annotation_format": "ST{}", "position_option": "Custom", "position": {"x": 0.0, "y": 0.0, "orientation": 0.0, "side": "Front"}, "template_path": ""}], "route_rows_and_columns": false, "template_path": "", "generate_outline": false, "outline_delta": 0.0}
+[key_placer.py:361]: Set key 1U distance: 18000000/17000000
+[key_placer.py:123]: Switches by nets: defaultdict(<class 'list'>, {frozenset({'unconnected-(SW101-B-Pad2)', 'unconnected-(SW101-A-Pad1)'}): ['SW101'], frozenset({'/COL13', '/ROW4'}): ['SW69'], frozenset({'/ROW3', '/COL00'}): ['SW43'], frozenset({'/ROW2', '/COL00'}): ['SW29'], frozenset({'/COL13', '/ROW1'}): ['SW28'], frozenset({'/ROW5', '/COL06'}): ['SW75'], frozenset({'/COL13', '/ROW5'}): ['SW81'], frozenset({'/ROW5', '/COL12'}): ['SW80'], frozenset({'/ROW5', '/COL11'}): ['SW79'], frozenset({'/COL10', '/ROW5'}): ['SW78'], frozenset({'/ROW5', '/COL09'}): ['SW77'], frozenset({'/ROW5', '/COL08'}): ['SW76'], frozenset({'/ROW5', '/COL05'}): ['SW74'], frozenset({'/ROW5', '/COL03'}): ['SW73'], frozenset({'/COL02', '/ROW5'}): ['SW72'], frozenset({'/COL01', '/ROW5'}): ['SW71'], frozenset({'/ROW5', '/COL00'}): ['SW70'], frozenset({'/COL12', '/ROW4'}): ['SW68'], frozenset({'/COL11', '/ROW4'}): ['SW67'], frozenset({'/COL10', '/ROW4'}): ['SW66'], frozenset({'/COL09', '/ROW4'}): ['SW65'], frozenset({'/COL08', '/ROW4'}): ['SW64'], frozenset({'/COL07', '/ROW4'}): ['SW63'], frozenset({'/COL06', '/ROW4'}): ['SW62'], frozenset({'/COL05', '/ROW4'}): ['SW61'], frozenset({'/COL04', '/ROW4'}): ['SW60'], frozenset({'/COL03', '/ROW4'}): ['SW59'], frozenset({'/COL02', '/ROW4'}): ['SW58'], frozenset({'/COL01', '/ROW4'}): ['SW57'], frozenset({'/COL00', '/ROW4'}): ['SW56'], frozenset({'/ROW3', '/COL12'}): ['SW55'], frozenset({'/ROW3', '/COL11'}): ['SW54'], frozenset({'/ROW3', '/COL10'}): ['SW53'], frozenset({'/ROW3', '/COL09'}): ['SW52'], frozenset({'/ROW3', '/COL08'}): ['SW51'], frozenset({'/ROW3', '/COL07'}): ['SW50'], frozenset({'/ROW3', '/COL06'}): ['SW49'], frozenset({'/ROW3', '/COL05'}): ['SW48'], frozenset({'/ROW3', '/COL04'}): ['SW47'], frozenset({'/ROW3', '/COL03'}): ['SW46'], frozenset({'/ROW3', '/COL02'}): ['SW45'], frozenset({'/ROW3', '/COL01'}): ['SW44'], frozenset({'/ROW2', '/COL13'}): ['SW42'], frozenset({'/ROW2', '/COL12'}): ['SW41'], frozenset({'/ROW2', '/COL11'}): ['SW40'], frozenset({'/ROW2', '/COL10'}): ['SW39'], frozenset({'/ROW2', '/COL09'}): ['SW38'], frozenset({'/ROW2', '/COL08'}): ['SW37'], frozenset({'/ROW2', '/COL07'}): ['SW36'], frozenset({'/ROW2', '/COL06'}): ['SW35'], frozenset({'/ROW2', '/COL05'}): ['SW34'], frozenset({'/ROW2', '/COL04'}): ['SW33'], frozenset({'/ROW2', '/COL03'}): ['SW32'], frozenset({'/ROW2', '/COL02'}): ['SW31'], frozenset({'/ROW2', '/COL01'}): ['SW30'], frozenset({'/COL12', '/ROW1'}): ['SW27'], frozenset({'/COL11', '/ROW1'}): ['SW26'], frozenset({'/COL10', '/ROW1'}): ['SW25'], frozenset({'/COL09', '/ROW1'}): ['SW24'], frozenset({'/COL08', '/ROW1'}): ['SW23'], frozenset({'/COL07', '/ROW1'}): ['SW22'], frozenset({'/COL06', '/ROW1'}): ['SW21'], frozenset({'/COL05', '/ROW1'}): ['SW20'], frozenset({'/COL04', '/ROW1'}): ['SW19'], frozenset({'/COL03', '/ROW1'}): ['SW18'], frozenset({'/COL02', '/ROW1'}): ['SW17'], frozenset({'/COL01', '/ROW1'}): ['SW16'], frozenset({'/COL00', '/ROW1'}): ['SW15'], frozenset({'/COL13', '/ROW0'}): ['SW14'], frozenset({'/COL12', '/ROW0'}): ['SW13'], frozenset({'/ROW0', '/COL11'}): ['SW12'], frozenset({'/COL10', '/ROW0'}): ['SW11'], frozenset({'/COL09', '/ROW0'}): ['SW10'], frozenset({'/ROW0', '/COL08'}): ['SW9'], frozenset({'/COL07', '/ROW0'}): ['SW8'], frozenset({'/COL06', '/ROW0'}): ['SW7'], frozenset({'/COL05', '/ROW0'}): ['SW6'], frozenset({'/COL04', '/ROW0'}): ['SW5'], frozenset({'/COL03', '/ROW0'}): ['SW4'], frozenset({'/COL02', '/ROW0'}): ['SW3'], frozenset({'/COL01', '/ROW0'}): ['SW2'], frozenset({'/COL00', '/ROW0'}): ['SW1']})
+[key_placer.py:127]: Diodes by switch: {'SW75': ['D75'], 'SW81': ['D81'], 'SW80': ['D80'], 'SW79': ['D79'], 'SW78': ['D78'], 'SW77': ['D77'], 'SW76': ['D76'], 'SW74': ['D74'], 'SW73': ['D73'], 'SW72': ['D72'], 'SW71': ['D71'], 'SW70': ['D70'], 'SW69': ['D69'], 'SW68': ['D68'], 'SW67': ['D67'], 'SW66': ['D66'], 'SW65': ['D65'], 'SW64': ['D64'], 'SW63': ['D63'], 'SW62': ['D62'], 'SW61': ['D61'], 'SW60': ['D60'], 'SW59': ['D59'], 'SW58': ['D58'], 'SW57': ['D57'], 'SW56': ['D56'], 'SW55': ['D55'], 'SW54': ['D54'], 'SW53': ['D53'], 'SW52': ['D52'], 'SW51': ['D51'], 'SW50': ['D50'], 'SW49': ['D49'], 'SW48': ['D48'], 'SW47': ['D47'], 'SW46': ['D46'], 'SW45': ['D45'], 'SW44': ['D44'], 'SW43': ['D43'], 'SW42': ['D42'], 'SW41': ['D41'], 'SW40': ['D40'], 'SW39': ['D39'], 'SW38': ['D38'], 'SW37': ['D37'], 'SW36': ['D36'], 'SW35': ['D35'], 'SW34': ['D34'], 'SW33': ['D33'], 'SW32': ['D32'], 'SW31': ['D31'], 'SW30': ['D30'], 'SW29': ['D29'], 'SW28': ['D28'], 'SW27': ['D27'], 'SW26': ['D26'], 'SW25': ['D25'], 'SW24': ['D24'], 'SW23': ['D23'], 'SW22': ['D22'], 'SW21': ['D21'], 'SW20': ['D20'], 'SW19': ['D19'], 'SW18': ['D18'], 'SW17': ['D17'], 'SW16': ['D16'], 'SW15': ['D15'], 'SW14': ['D14'], 'SW13': ['D13'], 'SW12': ['D12'], 'SW11': ['D11'], 'SW10': ['D10'], 'SW9': ['D9'], 'SW8': ['D8'], 'SW7': ['D7'], 'SW6': ['D6'], 'SW5': ['D5'], 'SW4': ['D4'], 'SW3': ['D3'], 'SW2': ['D2'], 'SW1': ['D1']}
+[kle_serial.py:897]: User layout: [[{'a': 7}, 'ESC', 'F1', 'F2', 'F3', 'F4', {'x': 0.25}, 'F5', 'F6', 'F7', 'F8', {'x': 0.25}, 'F9', 'F10', 'F11', 'F12', 'DEL'], [{'a': 5}, '½\n\n\n\n\n\n§', '!\n\n\n\n\n\n1', '"\n\n\n\n\n\n2', '#\n\n\n\n\n\n3', '¤\n\n\n\n\n\n4', '%\n\n\n\n\n\n5', '&\n\n\n\n\n\n6', '/\n{\n\n\n\n\n7', '(\n[\n\n\n\n\n8', ')\n]\n\n\n\n\n9', '=\n}\n\n\n\n\n0', '?\n\\\n\n\n\n\n+', '`\n\n\n\n\n\n´', {'a': 7, 'w': 1.5}, 'BKSP'], [{'w': 1.25}, 'TAB', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'Å', {'a': 5}, '^\n~\n\n\n\n\n¨', {'a': 7, 'w': 1.25, 'w2': 1, 'h2': 2, 'x2': 0.25}, 'ENTER'], [{'w': 1.5}, 'CAPS', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Ö', 'Ä', {'a': 5}, "*\n\n\n\n\n\n'"], [{'a': 7}, 'SHIFT', {'a': 5}, '>\n|\n\n\n\n\n<', {'a': 7}, 'Z', 'X', 'C', 'V', 'B', 'N', 'M', {'a': 5}, ';\n\n\n\n\n\n,', ':\n\n\n\n\n\n.', '_\n\n\n\n\n\n-', '\npgup\n\n\n\n\n˄', {'a': 7, 'w': 1.5}, 'SHIFT'], ['CTRL', 'FN', {'a': 5}, 'super\n\n\n\n\n\nOPT', 'alt\n\n\n\n\n\nCMD', {'a': 7, 'w': 2}, 'SPACE', {'w': 2}, 'SPACE', 'CMD', 'OPT', 'CTRL', {'a': 5}, '\nhome\n\n\n\n\n˂', '\npgdn\n\n\n\n\n˅', '\nend\n\n\n\n\n˃'], [{'r': 90, 'rx': 14, 'ry': 5.5, 'y': -0.5, 'x': -0.5, 'a': 7, 'f': 1, 'h': 0.5, 'd': True}, 'SLIDESW\n\n\n\nON/OFF']]
+[key_placer.py:661]: Layout offset: (27000000, 25500000)
+[board_modifier.py:85]: Setting SW1 footprint position: (36000000, 34000000)
+[board_modifier.py:85]: Setting SW2 footprint position: (54000000, 34000000)
+[board_modifier.py:85]: Setting SW3 footprint position: (72000000, 34000000)
+[board_modifier.py:85]: Setting SW4 footprint position: (90000000, 34000000)
+[board_modifier.py:85]: Setting SW5 footprint position: (108000000, 34000000)
+[board_modifier.py:85]: Setting SW6 footprint position: (130500000, 34000000)
+[board_modifier.py:85]: Setting SW7 footprint position: (148500000, 34000000)
+[board_modifier.py:85]: Setting SW8 footprint position: (166500000, 34000000)
+[board_modifier.py:85]: Setting SW9 footprint position: (184500000, 34000000)
+[board_modifier.py:85]: Setting SW10 footprint position: (207000000, 34000000)
+[board_modifier.py:85]: Setting SW11 footprint position: (225000000, 34000000)
+[board_modifier.py:85]: Setting SW12 footprint position: (243000000, 34000000)
+[board_modifier.py:85]: Setting SW13 footprint position: (261000000, 34000000)
+[board_modifier.py:85]: Setting SW14 footprint position: (279000000, 34000000)
+[board_modifier.py:85]: Setting SW15 footprint position: (36000000, 51000000)
+[board_modifier.py:85]: Setting SW16 footprint position: (54000000, 51000000)
+[board_modifier.py:85]: Setting SW17 footprint position: (72000000, 51000000)
+[board_modifier.py:85]: Setting SW18 footprint position: (90000000, 51000000)
+[board_modifier.py:85]: Setting SW19 footprint position: (108000000, 51000000)
+[board_modifier.py:85]: Setting SW20 footprint position: (126000000, 51000000)
+[board_modifier.py:85]: Setting SW21 footprint position: (144000000, 51000000)
+[board_modifier.py:85]: Setting SW22 footprint position: (162000000, 51000000)
+[board_modifier.py:85]: Setting SW23 footprint position: (180000000, 51000000)
+[board_modifier.py:85]: Setting SW24 footprint position: (198000000, 51000000)
+[board_modifier.py:85]: Setting SW25 footprint position: (216000000, 51000000)
+[board_modifier.py:85]: Setting SW26 footprint position: (234000000, 51000000)
+[board_modifier.py:85]: Setting SW27 footprint position: (252000000, 51000000)
+[board_modifier.py:85]: Setting SW28 footprint position: (274500000, 51000000)
+[board_modifier.py:85]: Setting SW29 footprint position: (38250000, 68000000)
+[board_modifier.py:85]: Setting SW30 footprint position: (58500000, 68000000)
+[board_modifier.py:85]: Setting SW31 footprint position: (76500000, 68000000)
+[board_modifier.py:85]: Setting SW32 footprint position: (94500000, 68000000)
+[board_modifier.py:85]: Setting SW33 footprint position: (112500000, 68000000)
+[board_modifier.py:85]: Setting SW34 footprint position: (130500000, 68000000)
+[board_modifier.py:85]: Setting SW35 footprint position: (148500000, 68000000)
+[board_modifier.py:85]: Setting SW36 footprint position: (166500000, 68000000)
+[board_modifier.py:85]: Setting SW37 footprint position: (184500000, 68000000)
+[board_modifier.py:85]: Setting SW38 footprint position: (202500000, 68000000)
+[board_modifier.py:85]: Setting SW39 footprint position: (220500000, 68000000)
+[board_modifier.py:85]: Setting SW40 footprint position: (238500000, 68000000)
+[board_modifier.py:85]: Setting SW41 footprint position: (256500000, 68000000)
+[board_modifier.py:85]: Setting SW42 footprint position: (276750000, 68000000)
+[board_modifier.py:85]: Setting SW43 footprint position: (40500000, 85000000)
+[board_modifier.py:85]: Setting SW44 footprint position: (63000000, 85000000)
+[board_modifier.py:85]: Setting SW45 footprint position: (81000000, 85000000)
+[board_modifier.py:85]: Setting SW46 footprint position: (99000000, 85000000)
+[board_modifier.py:85]: Setting SW47 footprint position: (117000000, 85000000)
+[board_modifier.py:85]: Setting SW48 footprint position: (135000000, 85000000)
+[board_modifier.py:85]: Setting SW49 footprint position: (153000000, 85000000)
+[board_modifier.py:85]: Setting SW50 footprint position: (171000000, 85000000)
+[board_modifier.py:85]: Setting SW51 footprint position: (189000000, 85000000)
+[board_modifier.py:85]: Setting SW52 footprint position: (207000000, 85000000)
+[board_modifier.py:85]: Setting SW53 footprint position: (225000000, 85000000)
+[board_modifier.py:85]: Setting SW54 footprint position: (243000000, 85000000)
+[board_modifier.py:85]: Setting SW55 footprint position: (261000000, 85000000)
+[board_modifier.py:85]: Setting SW56 footprint position: (36000000, 102000000)
+[board_modifier.py:85]: Setting SW57 footprint position: (54000000, 102000000)
+[board_modifier.py:85]: Setting SW58 footprint position: (72000000, 102000000)
+[board_modifier.py:85]: Setting SW59 footprint position: (90000000, 102000000)
+[board_modifier.py:85]: Setting SW60 footprint position: (108000000, 102000000)
+[board_modifier.py:85]: Setting SW61 footprint position: (126000000, 102000000)
+[board_modifier.py:85]: Setting SW62 footprint position: (144000000, 102000000)
+[board_modifier.py:85]: Setting SW63 footprint position: (162000000, 102000000)
+[board_modifier.py:85]: Setting SW64 footprint position: (180000000, 102000000)
+[board_modifier.py:85]: Setting SW65 footprint position: (198000000, 102000000)
+[board_modifier.py:85]: Setting SW66 footprint position: (216000000, 102000000)
+[board_modifier.py:85]: Setting SW67 footprint position: (234000000, 102000000)
+[board_modifier.py:85]: Setting SW68 footprint position: (252000000, 102000000)
+[board_modifier.py:85]: Setting SW69 footprint position: (274500000, 102000000)
+[board_modifier.py:85]: Setting SW70 footprint position: (36000000, 119000000)
+[board_modifier.py:85]: Setting SW71 footprint position: (54000000, 119000000)
+[board_modifier.py:85]: Setting SW72 footprint position: (72000000, 119000000)
+[board_modifier.py:85]: Setting SW73 footprint position: (90000000, 119000000)
+[board_modifier.py:85]: Setting SW74 footprint position: (117000000, 119000000)
+[board_modifier.py:85]: Setting SW75 footprint position: (153000000, 119000000)
+[board_modifier.py:85]: Setting SW76 footprint position: (180000000, 119000000)
+[board_modifier.py:85]: Setting SW77 footprint position: (198000000, 119000000)
+[board_modifier.py:85]: Setting SW78 footprint position: (216000000, 119000000)
+[board_modifier.py:85]: Setting SW79 footprint position: (234000000, 119000000)
+[board_modifier.py:85]: Setting SW80 footprint position: (252000000, 119000000)
+[board_modifier.py:85]: Setting SW81 footprint position: (270000000, 119000000)
+[key_placer.py:996]: Diode info: [ElementInfo(annotation_format='D{}', position_option=<PositionOption.CUSTOM: 'Custom'>, position=ElementPosition(x=8.5, y=3.03, orientation=90.0, side=<Side.BACK: 'Back'>), template_path='')]
+[board_modifier.py:98]: Getting SW1 footprint position: (36000000, 34000000)
+[board_modifier.py:85]: Setting D1 footprint position: (44500000, 37030000)
+[board_modifier.py:98]: Getting SW2 footprint position: (54000000, 34000000)
+[board_modifier.py:85]: Setting D2 footprint position: (62500000, 37030000)
+[board_modifier.py:98]: Getting SW3 footprint position: (72000000, 34000000)
+[board_modifier.py:85]: Setting D3 footprint position: (80500000, 37030000)
+[board_modifier.py:98]: Getting SW4 footprint position: (90000000, 34000000)
+[board_modifier.py:85]: Setting D4 footprint position: (98500000, 37030000)
+[board_modifier.py:98]: Getting SW5 footprint position: (108000000, 34000000)
+[board_modifier.py:85]: Setting D5 footprint position: (116500000, 37030000)
+[board_modifier.py:98]: Getting SW6 footprint position: (130500000, 34000000)
+[board_modifier.py:85]: Setting D6 footprint position: (139000000, 37030000)
+[board_modifier.py:98]: Getting SW7 footprint position: (148500000, 34000000)
+[board_modifier.py:85]: Setting D7 footprint position: (157000000, 37030000)
+[board_modifier.py:98]: Getting SW8 footprint position: (166500000, 34000000)
+[board_modifier.py:85]: Setting D8 footprint position: (175000000, 37030000)
+[board_modifier.py:98]: Getting SW9 footprint position: (184500000, 34000000)
+[board_modifier.py:85]: Setting D9 footprint position: (193000000, 37030000)
+[board_modifier.py:98]: Getting SW10 footprint position: (207000000, 34000000)
+[board_modifier.py:85]: Setting D10 footprint position: (215500000, 37030000)
+[board_modifier.py:98]: Getting SW11 footprint position: (225000000, 34000000)
+[board_modifier.py:85]: Setting D11 footprint position: (233500000, 37030000)
+[board_modifier.py:98]: Getting SW12 footprint position: (243000000, 34000000)
+[board_modifier.py:85]: Setting D12 footprint position: (251500000, 37030000)
+[board_modifier.py:98]: Getting SW13 footprint position: (261000000, 34000000)
+[board_modifier.py:85]: Setting D13 footprint position: (269500000, 37030000)
+[board_modifier.py:98]: Getting SW14 footprint position: (279000000, 34000000)
+[board_modifier.py:85]: Setting D14 footprint position: (287500000, 37030000)
+[board_modifier.py:98]: Getting SW15 footprint position: (36000000, 51000000)
+[board_modifier.py:85]: Setting D15 footprint position: (44500000, 54030000)
+[board_modifier.py:98]: Getting SW16 footprint position: (54000000, 51000000)
+[board_modifier.py:85]: Setting D16 footprint position: (62500000, 54030000)
+[board_modifier.py:98]: Getting SW17 footprint position: (72000000, 51000000)
+[board_modifier.py:85]: Setting D17 footprint position: (80500000, 54030000)
+[board_modifier.py:98]: Getting SW18 footprint position: (90000000, 51000000)
+[board_modifier.py:85]: Setting D18 footprint position: (98500000, 54030000)
+[board_modifier.py:98]: Getting SW19 footprint position: (108000000, 51000000)
+[board_modifier.py:85]: Setting D19 footprint position: (116500000, 54030000)
+[board_modifier.py:98]: Getting SW20 footprint position: (126000000, 51000000)
+[board_modifier.py:85]: Setting D20 footprint position: (134500000, 54030000)
+[board_modifier.py:98]: Getting SW21 footprint position: (144000000, 51000000)
+[board_modifier.py:85]: Setting D21 footprint position: (152500000, 54030000)
+[board_modifier.py:98]: Getting SW22 footprint position: (162000000, 51000000)
+[board_modifier.py:85]: Setting D22 footprint position: (170500000, 54030000)
+[board_modifier.py:98]: Getting SW23 footprint position: (180000000, 51000000)
+[board_modifier.py:85]: Setting D23 footprint position: (188500000, 54030000)
+[board_modifier.py:98]: Getting SW24 footprint position: (198000000, 51000000)
+[board_modifier.py:85]: Setting D24 footprint position: (206500000, 54030000)
+[board_modifier.py:98]: Getting SW25 footprint position: (216000000, 51000000)
+[board_modifier.py:85]: Setting D25 footprint position: (224500000, 54030000)
+[board_modifier.py:98]: Getting SW26 footprint position: (234000000, 51000000)
+[board_modifier.py:85]: Setting D26 footprint position: (242500000, 54030000)
+[board_modifier.py:98]: Getting SW27 footprint position: (252000000, 51000000)
+[board_modifier.py:85]: Setting D27 footprint position: (260500000, 54030000)
+[board_modifier.py:98]: Getting SW28 footprint position: (274500000, 51000000)
+[board_modifier.py:85]: Setting D28 footprint position: (283000000, 54030000)
+[board_modifier.py:98]: Getting SW29 footprint position: (38250000, 68000000)
+[board_modifier.py:85]: Setting D29 footprint position: (46750000, 71030000)
+[board_modifier.py:98]: Getting SW30 footprint position: (58500000, 68000000)
+[board_modifier.py:85]: Setting D30 footprint position: (67000000, 71030000)
+[board_modifier.py:98]: Getting SW31 footprint position: (76500000, 68000000)
+[board_modifier.py:85]: Setting D31 footprint position: (85000000, 71030000)
+[board_modifier.py:98]: Getting SW32 footprint position: (94500000, 68000000)
+[board_modifier.py:85]: Setting D32 footprint position: (103000000, 71030000)
+[board_modifier.py:98]: Getting SW33 footprint position: (112500000, 68000000)
+[board_modifier.py:85]: Setting D33 footprint position: (121000000, 71030000)
+[board_modifier.py:98]: Getting SW34 footprint position: (130500000, 68000000)
+[board_modifier.py:85]: Setting D34 footprint position: (139000000, 71030000)
+[board_modifier.py:98]: Getting SW35 footprint position: (148500000, 68000000)
+[board_modifier.py:85]: Setting D35 footprint position: (157000000, 71030000)
+[board_modifier.py:98]: Getting SW36 footprint position: (166500000, 68000000)
+[board_modifier.py:85]: Setting D36 footprint position: (175000000, 71030000)
+[board_modifier.py:98]: Getting SW37 footprint position: (184500000, 68000000)
+[board_modifier.py:85]: Setting D37 footprint position: (193000000, 71030000)
+[board_modifier.py:98]: Getting SW38 footprint position: (202500000, 68000000)
+[board_modifier.py:85]: Setting D38 footprint position: (211000000, 71030000)
+[board_modifier.py:98]: Getting SW39 footprint position: (220500000, 68000000)
+[board_modifier.py:85]: Setting D39 footprint position: (229000000, 71030000)
+[board_modifier.py:98]: Getting SW40 footprint position: (238500000, 68000000)
+[board_modifier.py:85]: Setting D40 footprint position: (247000000, 71030000)
+[board_modifier.py:98]: Getting SW41 footprint position: (256500000, 68000000)
+[board_modifier.py:85]: Setting D41 footprint position: (265000000, 71030000)
+[board_modifier.py:98]: Getting SW42 footprint position: (276750000, 68000000)
+[board_modifier.py:85]: Setting D42 footprint position: (285250000, 71030000)
+[board_modifier.py:98]: Getting SW43 footprint position: (40500000, 85000000)
+[board_modifier.py:85]: Setting D43 footprint position: (49000000, 88030000)
+[board_modifier.py:98]: Getting SW44 footprint position: (63000000, 85000000)
+[board_modifier.py:85]: Setting D44 footprint position: (71500000, 88030000)
+[board_modifier.py:98]: Getting SW45 footprint position: (81000000, 85000000)
+[board_modifier.py:85]: Setting D45 footprint position: (89500000, 88030000)
+[board_modifier.py:98]: Getting SW46 footprint position: (99000000, 85000000)
+[board_modifier.py:85]: Setting D46 footprint position: (107500000, 88030000)
+[board_modifier.py:98]: Getting SW47 footprint position: (117000000, 85000000)
+[board_modifier.py:85]: Setting D47 footprint position: (125500000, 88030000)
+[board_modifier.py:98]: Getting SW48 footprint position: (135000000, 85000000)
+[board_modifier.py:85]: Setting D48 footprint position: (143500000, 88030000)
+[board_modifier.py:98]: Getting SW49 footprint position: (153000000, 85000000)
+[board_modifier.py:85]: Setting D49 footprint position: (161500000, 88030000)
+[board_modifier.py:98]: Getting SW50 footprint position: (171000000, 85000000)
+[board_modifier.py:85]: Setting D50 footprint position: (179500000, 88030000)
+[board_modifier.py:98]: Getting SW51 footprint position: (189000000, 85000000)
+[board_modifier.py:85]: Setting D51 footprint position: (197500000, 88030000)
+[board_modifier.py:98]: Getting SW52 footprint position: (207000000, 85000000)
+[board_modifier.py:85]: Setting D52 footprint position: (215500000, 88030000)
+[board_modifier.py:98]: Getting SW53 footprint position: (225000000, 85000000)
+[board_modifier.py:85]: Setting D53 footprint position: (233500000, 88030000)
+[board_modifier.py:98]: Getting SW54 footprint position: (243000000, 85000000)
+[board_modifier.py:85]: Setting D54 footprint position: (251500000, 88030000)
+[board_modifier.py:98]: Getting SW55 footprint position: (261000000, 85000000)
+[board_modifier.py:85]: Setting D55 footprint position: (269500000, 88030000)
+[board_modifier.py:98]: Getting SW56 footprint position: (36000000, 102000000)
+[board_modifier.py:85]: Setting D56 footprint position: (44500000, 105030000)
+[board_modifier.py:98]: Getting SW57 footprint position: (54000000, 102000000)
+[board_modifier.py:85]: Setting D57 footprint position: (62500000, 105030000)
+[board_modifier.py:98]: Getting SW58 footprint position: (72000000, 102000000)
+[board_modifier.py:85]: Setting D58 footprint position: (80500000, 105030000)
+[board_modifier.py:98]: Getting SW59 footprint position: (90000000, 102000000)
+[board_modifier.py:85]: Setting D59 footprint position: (98500000, 105030000)
+[board_modifier.py:98]: Getting SW60 footprint position: (108000000, 102000000)
+[board_modifier.py:85]: Setting D60 footprint position: (116500000, 105030000)
+[board_modifier.py:98]: Getting SW61 footprint position: (126000000, 102000000)
+[board_modifier.py:85]: Setting D61 footprint position: (134500000, 105030000)
+[board_modifier.py:98]: Getting SW62 footprint position: (144000000, 102000000)
+[board_modifier.py:85]: Setting D62 footprint position: (152500000, 105030000)
+[board_modifier.py:98]: Getting SW63 footprint position: (162000000, 102000000)
+[board_modifier.py:85]: Setting D63 footprint position: (170500000, 105030000)
+[board_modifier.py:98]: Getting SW64 footprint position: (180000000, 102000000)
+[board_modifier.py:85]: Setting D64 footprint position: (188500000, 105030000)
+[board_modifier.py:98]: Getting SW65 footprint position: (198000000, 102000000)
+[board_modifier.py:85]: Setting D65 footprint position: (206500000, 105030000)
+[board_modifier.py:98]: Getting SW66 footprint position: (216000000, 102000000)
+[board_modifier.py:85]: Setting D66 footprint position: (224500000, 105030000)
+[board_modifier.py:98]: Getting SW67 footprint position: (234000000, 102000000)
+[board_modifier.py:85]: Setting D67 footprint position: (242500000, 105030000)
+[board_modifier.py:98]: Getting SW68 footprint position: (252000000, 102000000)
+[board_modifier.py:85]: Setting D68 footprint position: (260500000, 105030000)
+[board_modifier.py:98]: Getting SW69 footprint position: (274500000, 102000000)
+[board_modifier.py:85]: Setting D69 footprint position: (283000000, 105030000)
+[board_modifier.py:98]: Getting SW70 footprint position: (36000000, 119000000)
+[board_modifier.py:85]: Setting D70 footprint position: (44500000, 122030000)
+[board_modifier.py:98]: Getting SW71 footprint position: (54000000, 119000000)
+[board_modifier.py:85]: Setting D71 footprint position: (62500000, 122030000)
+[board_modifier.py:98]: Getting SW72 footprint position: (72000000, 119000000)
+[board_modifier.py:85]: Setting D72 footprint position: (80500000, 122030000)
+[board_modifier.py:98]: Getting SW73 footprint position: (90000000, 119000000)
+[board_modifier.py:85]: Setting D73 footprint position: (98500000, 122030000)
+[board_modifier.py:98]: Getting SW74 footprint position: (117000000, 119000000)
+[board_modifier.py:85]: Setting D74 footprint position: (125500000, 122030000)
+[board_modifier.py:98]: Getting SW75 footprint position: (153000000, 119000000)
+[board_modifier.py:85]: Setting D75 footprint position: (161500000, 122030000)
+[board_modifier.py:98]: Getting SW76 footprint position: (180000000, 119000000)
+[board_modifier.py:85]: Setting D76 footprint position: (188500000, 122030000)
+[board_modifier.py:98]: Getting SW77 footprint position: (198000000, 119000000)
+[board_modifier.py:85]: Setting D77 footprint position: (206500000, 122030000)
+[board_modifier.py:98]: Getting SW78 footprint position: (216000000, 119000000)
+[board_modifier.py:85]: Setting D78 footprint position: (224500000, 122030000)
+[board_modifier.py:98]: Getting SW79 footprint position: (234000000, 119000000)
+[board_modifier.py:85]: Setting D79 footprint position: (242500000, 122030000)
+[board_modifier.py:98]: Getting SW80 footprint position: (252000000, 119000000)
+[board_modifier.py:85]: Setting D80 footprint position: (260500000, 122030000)
+[board_modifier.py:98]: Getting SW81 footprint position: (270000000, 119000000)
+[board_modifier.py:85]: Setting D81 footprint position: (278500000, 122030000)
+[board_modifier.py:98]: Getting SW101 footprint position: (284480000, 120256000)
+[key_placer.py:774]: Placing additional elements for SW101
+[board_modifier.py:98]: Getting SW101 footprint position: (284480000, 120256000)
+[board_modifier.py:75]: Searching for optional ST101 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW69
+[board_modifier.py:98]: Getting SW69 footprint position: (274500000, 102000000)
+[board_modifier.py:75]: Searching for optional ST69 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW43
+[board_modifier.py:98]: Getting SW43 footprint position: (40500000, 85000000)
+[board_modifier.py:75]: Searching for optional ST43 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW29
+[board_modifier.py:98]: Getting SW29 footprint position: (38250000, 68000000)
+[board_modifier.py:75]: Searching for optional ST29 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW28
+[board_modifier.py:98]: Getting SW28 footprint position: (274500000, 51000000)
+[board_modifier.py:75]: Searching for optional ST28 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW75
+[board_modifier.py:98]: Getting SW75 footprint position: (153000000, 119000000)
+[board_modifier.py:75]: Searching for optional ST75 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW81
+[board_modifier.py:98]: Getting SW81 footprint position: (270000000, 119000000)
+[board_modifier.py:75]: Searching for optional ST81 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW80
+[board_modifier.py:98]: Getting SW80 footprint position: (252000000, 119000000)
+[board_modifier.py:75]: Searching for optional ST80 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW79
+[board_modifier.py:98]: Getting SW79 footprint position: (234000000, 119000000)
+[board_modifier.py:75]: Searching for optional ST79 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW78
+[board_modifier.py:98]: Getting SW78 footprint position: (216000000, 119000000)
+[board_modifier.py:75]: Searching for optional ST78 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW77
+[board_modifier.py:98]: Getting SW77 footprint position: (198000000, 119000000)
+[board_modifier.py:75]: Searching for optional ST77 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW76
+[board_modifier.py:98]: Getting SW76 footprint position: (180000000, 119000000)
+[board_modifier.py:75]: Searching for optional ST76 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW74
+[board_modifier.py:98]: Getting SW74 footprint position: (117000000, 119000000)
+[board_modifier.py:75]: Searching for optional ST74 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW73
+[board_modifier.py:98]: Getting SW73 footprint position: (90000000, 119000000)
+[board_modifier.py:75]: Searching for optional ST73 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW72
+[board_modifier.py:98]: Getting SW72 footprint position: (72000000, 119000000)
+[board_modifier.py:75]: Searching for optional ST72 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW71
+[board_modifier.py:98]: Getting SW71 footprint position: (54000000, 119000000)
+[board_modifier.py:75]: Searching for optional ST71 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW70
+[board_modifier.py:98]: Getting SW70 footprint position: (36000000, 119000000)
+[board_modifier.py:75]: Searching for optional ST70 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW68
+[board_modifier.py:98]: Getting SW68 footprint position: (252000000, 102000000)
+[board_modifier.py:75]: Searching for optional ST68 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW67
+[board_modifier.py:98]: Getting SW67 footprint position: (234000000, 102000000)
+[board_modifier.py:75]: Searching for optional ST67 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW66
+[board_modifier.py:98]: Getting SW66 footprint position: (216000000, 102000000)
+[board_modifier.py:75]: Searching for optional ST66 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW65
+[board_modifier.py:98]: Getting SW65 footprint position: (198000000, 102000000)
+[board_modifier.py:75]: Searching for optional ST65 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW64
+[board_modifier.py:98]: Getting SW64 footprint position: (180000000, 102000000)
+[board_modifier.py:75]: Searching for optional ST64 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW63
+[board_modifier.py:98]: Getting SW63 footprint position: (162000000, 102000000)
+[board_modifier.py:75]: Searching for optional ST63 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW62
+[board_modifier.py:98]: Getting SW62 footprint position: (144000000, 102000000)
+[board_modifier.py:75]: Searching for optional ST62 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW61
+[board_modifier.py:98]: Getting SW61 footprint position: (126000000, 102000000)
+[board_modifier.py:75]: Searching for optional ST61 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW60
+[board_modifier.py:98]: Getting SW60 footprint position: (108000000, 102000000)
+[board_modifier.py:75]: Searching for optional ST60 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW59
+[board_modifier.py:98]: Getting SW59 footprint position: (90000000, 102000000)
+[board_modifier.py:75]: Searching for optional ST59 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW58
+[board_modifier.py:98]: Getting SW58 footprint position: (72000000, 102000000)
+[board_modifier.py:75]: Searching for optional ST58 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW57
+[board_modifier.py:98]: Getting SW57 footprint position: (54000000, 102000000)
+[board_modifier.py:75]: Searching for optional ST57 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW56
+[board_modifier.py:98]: Getting SW56 footprint position: (36000000, 102000000)
+[board_modifier.py:75]: Searching for optional ST56 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW55
+[board_modifier.py:98]: Getting SW55 footprint position: (261000000, 85000000)
+[board_modifier.py:75]: Searching for optional ST55 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW54
+[board_modifier.py:98]: Getting SW54 footprint position: (243000000, 85000000)
+[board_modifier.py:75]: Searching for optional ST54 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW53
+[board_modifier.py:98]: Getting SW53 footprint position: (225000000, 85000000)
+[board_modifier.py:75]: Searching for optional ST53 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW52
+[board_modifier.py:98]: Getting SW52 footprint position: (207000000, 85000000)
+[board_modifier.py:75]: Searching for optional ST52 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW51
+[board_modifier.py:98]: Getting SW51 footprint position: (189000000, 85000000)
+[board_modifier.py:75]: Searching for optional ST51 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW50
+[board_modifier.py:98]: Getting SW50 footprint position: (171000000, 85000000)
+[board_modifier.py:75]: Searching for optional ST50 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW49
+[board_modifier.py:98]: Getting SW49 footprint position: (153000000, 85000000)
+[board_modifier.py:75]: Searching for optional ST49 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW48
+[board_modifier.py:98]: Getting SW48 footprint position: (135000000, 85000000)
+[board_modifier.py:75]: Searching for optional ST48 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW47
+[board_modifier.py:98]: Getting SW47 footprint position: (117000000, 85000000)
+[board_modifier.py:75]: Searching for optional ST47 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW46
+[board_modifier.py:98]: Getting SW46 footprint position: (99000000, 85000000)
+[board_modifier.py:75]: Searching for optional ST46 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW45
+[board_modifier.py:98]: Getting SW45 footprint position: (81000000, 85000000)
+[board_modifier.py:75]: Searching for optional ST45 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW44
+[board_modifier.py:98]: Getting SW44 footprint position: (63000000, 85000000)
+[board_modifier.py:75]: Searching for optional ST44 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW42
+[board_modifier.py:98]: Getting SW42 footprint position: (276750000, 68000000)
+[board_modifier.py:75]: Searching for optional ST42 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW41
+[board_modifier.py:98]: Getting SW41 footprint position: (256500000, 68000000)
+[board_modifier.py:75]: Searching for optional ST41 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW40
+[board_modifier.py:98]: Getting SW40 footprint position: (238500000, 68000000)
+[board_modifier.py:75]: Searching for optional ST40 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW39
+[board_modifier.py:98]: Getting SW39 footprint position: (220500000, 68000000)
+[board_modifier.py:75]: Searching for optional ST39 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW38
+[board_modifier.py:98]: Getting SW38 footprint position: (202500000, 68000000)
+[board_modifier.py:75]: Searching for optional ST38 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW37
+[board_modifier.py:98]: Getting SW37 footprint position: (184500000, 68000000)
+[board_modifier.py:75]: Searching for optional ST37 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW36
+[board_modifier.py:98]: Getting SW36 footprint position: (166500000, 68000000)
+[board_modifier.py:75]: Searching for optional ST36 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW35
+[board_modifier.py:98]: Getting SW35 footprint position: (148500000, 68000000)
+[board_modifier.py:75]: Searching for optional ST35 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW34
+[board_modifier.py:98]: Getting SW34 footprint position: (130500000, 68000000)
+[board_modifier.py:75]: Searching for optional ST34 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW33
+[board_modifier.py:98]: Getting SW33 footprint position: (112500000, 68000000)
+[board_modifier.py:75]: Searching for optional ST33 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW32
+[board_modifier.py:98]: Getting SW32 footprint position: (94500000, 68000000)
+[board_modifier.py:75]: Searching for optional ST32 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW31
+[board_modifier.py:98]: Getting SW31 footprint position: (76500000, 68000000)
+[board_modifier.py:75]: Searching for optional ST31 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW30
+[board_modifier.py:98]: Getting SW30 footprint position: (58500000, 68000000)
+[board_modifier.py:75]: Searching for optional ST30 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW27
+[board_modifier.py:98]: Getting SW27 footprint position: (252000000, 51000000)
+[board_modifier.py:75]: Searching for optional ST27 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW26
+[board_modifier.py:98]: Getting SW26 footprint position: (234000000, 51000000)
+[board_modifier.py:75]: Searching for optional ST26 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW25
+[board_modifier.py:98]: Getting SW25 footprint position: (216000000, 51000000)
+[board_modifier.py:75]: Searching for optional ST25 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW24
+[board_modifier.py:98]: Getting SW24 footprint position: (198000000, 51000000)
+[board_modifier.py:75]: Searching for optional ST24 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW23
+[board_modifier.py:98]: Getting SW23 footprint position: (180000000, 51000000)
+[board_modifier.py:75]: Searching for optional ST23 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW22
+[board_modifier.py:98]: Getting SW22 footprint position: (162000000, 51000000)
+[board_modifier.py:75]: Searching for optional ST22 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW21
+[board_modifier.py:98]: Getting SW21 footprint position: (144000000, 51000000)
+[board_modifier.py:75]: Searching for optional ST21 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW20
+[board_modifier.py:98]: Getting SW20 footprint position: (126000000, 51000000)
+[board_modifier.py:75]: Searching for optional ST20 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW19
+[board_modifier.py:98]: Getting SW19 footprint position: (108000000, 51000000)
+[board_modifier.py:75]: Searching for optional ST19 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW18
+[board_modifier.py:98]: Getting SW18 footprint position: (90000000, 51000000)
+[board_modifier.py:75]: Searching for optional ST18 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW17
+[board_modifier.py:98]: Getting SW17 footprint position: (72000000, 51000000)
+[board_modifier.py:75]: Searching for optional ST17 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW16
+[board_modifier.py:98]: Getting SW16 footprint position: (54000000, 51000000)
+[board_modifier.py:75]: Searching for optional ST16 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW15
+[board_modifier.py:98]: Getting SW15 footprint position: (36000000, 51000000)
+[board_modifier.py:75]: Searching for optional ST15 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW14
+[board_modifier.py:98]: Getting SW14 footprint position: (279000000, 34000000)
+[board_modifier.py:75]: Searching for optional ST14 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW13
+[board_modifier.py:98]: Getting SW13 footprint position: (261000000, 34000000)
+[board_modifier.py:75]: Searching for optional ST13 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW12
+[board_modifier.py:98]: Getting SW12 footprint position: (243000000, 34000000)
+[board_modifier.py:75]: Searching for optional ST12 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW11
+[board_modifier.py:98]: Getting SW11 footprint position: (225000000, 34000000)
+[board_modifier.py:75]: Searching for optional ST11 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW10
+[board_modifier.py:98]: Getting SW10 footprint position: (207000000, 34000000)
+[board_modifier.py:75]: Searching for optional ST10 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW9
+[board_modifier.py:98]: Getting SW9 footprint position: (184500000, 34000000)
+[board_modifier.py:75]: Searching for optional ST9 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW8
+[board_modifier.py:98]: Getting SW8 footprint position: (166500000, 34000000)
+[board_modifier.py:75]: Searching for optional ST8 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW7
+[board_modifier.py:98]: Getting SW7 footprint position: (148500000, 34000000)
+[board_modifier.py:75]: Searching for optional ST7 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW6
+[board_modifier.py:98]: Getting SW6 footprint position: (130500000, 34000000)
+[board_modifier.py:75]: Searching for optional ST6 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW5
+[board_modifier.py:98]: Getting SW5 footprint position: (108000000, 34000000)
+[board_modifier.py:75]: Searching for optional ST5 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW4
+[board_modifier.py:98]: Getting SW4 footprint position: (90000000, 34000000)
+[board_modifier.py:75]: Searching for optional ST4 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW3
+[board_modifier.py:98]: Getting SW3 footprint position: (72000000, 34000000)
+[board_modifier.py:75]: Searching for optional ST3 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW2
+[board_modifier.py:98]: Getting SW2 footprint position: (54000000, 34000000)
+[board_modifier.py:75]: Searching for optional ST2 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
+[key_placer.py:774]: Placing additional elements for SW1
+[board_modifier.py:98]: Getting SW1 footprint position: (36000000, 34000000)
+[board_modifier.py:75]: Searching for optional ST1 footprint in C:\Users\deffenertoaster10\Documents\KiCad\6.0\projects\d69-80\d69-80.kicad_pcb
+[board_modifier.py:80]: Footprint not found
